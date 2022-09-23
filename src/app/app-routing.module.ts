@@ -1,11 +1,11 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
+import { NgModule } from '@angular/core'
+import { RouterModule, Routes } from '@angular/router'
+import { BaseComponent } from './base/base.component'
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
-  { path: '**', redirectTo: 'home' }
-];
+  { path: '', component: BaseComponent },
+  { path: '**', redirectTo: 'base' }
+] 
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

@@ -1,0 +1,53 @@
+/* FONT TYPE */
+:root{
+     --white: whitesmoke;
+     --secondary-color: cornflowerblue;
+     --black: rgba(0, 0, 0, 0.8);
+     --black-gradient: rgba(34, 34, 34, 0.8);
+}
+
+body{
+    background-color: darkgray;
+    color: var(--white);
+}
+
+h2{
+    
+}
+
+.title{
+    color: var(--white);
+    font-weight: 600;
+}
+
+hr{
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-fluid{
+    display: block;
+    min-height: 400px;;
+}
+
+/* SECTION AREA */
+section{
+    display: flow-root;
+    margin: auto;
+    height: 100%;
+}
+
+.section-title{
+    padding: 2rem 0;
+    text-align: center !important;
+}
+
+section.services{
+    width: fit-content;
+}
+
+section.services > div.row > .card{
+    flex-shrink: 0;
+    padding: 0 !important; 
+}
