@@ -38,12 +38,13 @@
     "eslint-plugin-promise": "^6.0.1",
     "husky": "^8.0.0",
     "jasmine-core": "~4.2.0",
+    "jquery": "^3.6.1",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.1.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
-    "lint": "^0.7.0",
+    "lint": "^1.1.2",
     "popper": "^1.0.1",
     "typescript": "^4.8.3"
   }
