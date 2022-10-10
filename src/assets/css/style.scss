@@ -1,4 +1,5 @@
 /* FONT TYPE */
+<<<<<<< Updated upstream
 :root{
      --white: whitesmoke;
      --secondary-color: cornflowerblue;
@@ -17,38 +18,48 @@ h2{
 }
 
 .title{
-    color: var(--white);
-    font-weight: 600;
-}
+=======
+:root {
+  --white: rgb(245, 245, 245);
+  --secondary-color: rgb(100, 149, 237);
+  --black: rgba(0, 0, 0, 0.8);
+  --black-gradient: rgba(34, 34, 34, 0.8);
+  --black-standard: rgba(0, 0, 0, 0.6);
+  --gray: rgba(128, 128, 128);
+  --dark-blue: rgba(2, 0, 36, 1);
+  --mild-green: rgba(3, 124, 9, 0.84) 100%;
 
-hr{
+  html {
+    min-height: 100%;
+  }
+
+  body {
+    min-width: 100%;
+    background-attachment: fixed; /*edit*/
+    background-repeat: no-repeat !important;
+    background: linear-gradient(
+        0deg,
+        var(--dark-blue) -1%,
+        var(--mild-green) 100%
+      )
+      var(--dark-blue);
+>>>>>>> Stashed changes
+    color: var(--white);
+  }
+
+  hr {
     width: 30%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.container-fluid{
+  .title {
+    color: var(--white);
+    font-weight: 600;
+  }
+
+  .container-fluid {
     display: block;
-    min-height: 400px;;
-}
-
-/* SECTION AREA */
-section{
-    display: flow-root;
-    margin: auto;
-    height: 100%;
-}
-
-.section-title{
-    padding: 2rem 0;
-    text-align: center !important;
-}
-
-section.services{
-    width: fit-content;
-}
-
-section.services > div.row > .card{
-    flex-shrink: 0;
-    padding: 0 !important; 
+    min-height: 100%;
+  }
 }

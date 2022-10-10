@@ -7,7 +7,8 @@ import { HomeComponent } from './pages/home/home.component'
 import { NavComponent } from './nav/nav.component' 
 import { BaseComponent } from './base/base.component' 
 import { CardImagesComponent } from './modules/card-images/card-images.component' 
-import { MenuNavigationComponent } from './pages/menu-navigation/menu-navigation.component' 
+import { MenuNavigationComponent } from './pages/menu-navigation/menu-navigation.component';
+import { TwoColumnArticleComponent } from './modules/two-column-article/two-column-article.component' 
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { MenuNavigationComponent } from './pages/menu-navigation/menu-navigation
     NavComponent,
     BaseComponent,
     CardImagesComponent,
-    MenuNavigationComponent
+    MenuNavigationComponent,
+    TwoColumnArticleComponent
   ],
   imports: [
     BrowserModule,
