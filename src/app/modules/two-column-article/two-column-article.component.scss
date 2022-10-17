@@ -1,0 +1,13 @@
+section.article{
+    color: var(--white);
+
+    .two-col-img{
+        padding: 1rem;
+        display: flex;
+        margin: auto;
+    }
+
+    &  p {
+        padding: 2rem 0 ;
+    }
+}

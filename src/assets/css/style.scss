@@ -1,24 +1,4 @@
 /* FONT TYPE */
-<<<<<<< Updated upstream
-:root{
-     --white: whitesmoke;
-     --secondary-color: cornflowerblue;
-     --black: rgba(0, 0, 0, 0.8);
-     --black-gradient: rgba(34, 34, 34, 0.8);
-     --black-standard: rgba(0, 0, 0, 0.6);
-}
-
-body{
-    background-color: darkgray;
-    color: var(--white);
-}
-
-h2{
-    
-}
-
-.title{
-=======
 :root {
   --white: rgb(245, 245, 245);
   --secondary-color: rgb(100, 149, 237);
@@ -43,7 +23,6 @@ h2{
         var(--mild-green) 100%
       )
       var(--dark-blue);
->>>>>>> Stashed changes
     color: var(--white);
   }
 
