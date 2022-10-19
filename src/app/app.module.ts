@@ -8,7 +8,8 @@ import { NavComponent } from './nav/nav.component'
 import { BaseComponent } from './base/base.component' 
 import { CardImagesComponent } from './modules/card-images/card-images.component' 
 import { MenuNavigationComponent } from './pages/menu-navigation/menu-navigation.component';
-import { TwoColumnArticleComponent } from './modules/two-column-article/two-column-article.component' 
+import { TwoColumnArticleComponent } from './modules/two-column-article/two-column-article.component';
+import { ContentSpacerComponent } from './modules/content-spacer/content-spacer.component' 
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TwoColumnArticleComponent } from './modules/two-column-article/two-colu
     BaseComponent,
     CardImagesComponent,
     MenuNavigationComponent,
-    TwoColumnArticleComponent
+    TwoColumnArticleComponent,
+    ContentSpacerComponent
   ],
   imports: [
     BrowserModule,

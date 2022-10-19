@@ -1,13 +1,14 @@
 /* FONT TYPE */
 :root {
   --white: rgb(245, 245, 245);
-  --secondary-color: rgb(100, 149, 237);
+  --white-alpha: rgba(245, 245, 245, 0.8);
+  --primary:  rgba(3, 124, 9, 0.84);
+  --secondary: rgb(100, 149, 237);
   --black: rgba(0, 0, 0, 0.8);
   --black-gradient: rgba(34, 34, 34, 0.8);
   --black-standard: rgba(0, 0, 0, 0.6);
   --gray: rgba(128, 128, 128);
   --dark-blue: rgba(2, 0, 36, 1);
-  --mild-green: rgba(3, 124, 9, 0.84) 100%;
 
   html {
     min-height: 100%;
@@ -20,7 +21,7 @@
     background: linear-gradient(
         0deg,
         var(--dark-blue) -1%,
-        var(--mild-green) 100%
+        var(--primary) 100%
       )
       var(--dark-blue);
     color: var(--white);
@@ -40,5 +41,25 @@
   .container-fluid {
     display: block;
     min-height: 100%;
+  }
+
+  a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 0.2rem 0.2rem 0.2rem var(--black);
+  }
+
+  a:hover {
+    background-color: none;
+    box-shadow: 0.2rem 0.2rem 0.2rem var(--dark-blue);
+  }
+  
+  a:active {
+    background-color: black;
+  }
+  
+  a:visited {
+    color: orange;
   }
 }
