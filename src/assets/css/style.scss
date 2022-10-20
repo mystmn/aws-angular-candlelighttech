@@ -2,13 +2,20 @@
 :root {
   --white: rgb(245, 245, 245);
   --white-alpha: rgba(245, 245, 245, 0.8);
-  --primary:  rgba(3, 124, 9, 0.84);
+  --prim-green: rgba(3, 124, 9, 0.839);
+  --prim-green-sec: rgb(3, 124, 70);
+  --prim-green-thir: rgb(3, 118, 124);
+
+  --prim-triadic-blue: rgb(9, 3, 124, 1);
+  --prim-triadic-red: rgb(124, 9, 3);
+  --prim-triadic-light-red: rgb(255,171,166);
+
   --secondary: rgb(100, 149, 237);
   --black: rgba(0, 0, 0, 0.8);
   --black-gradient: rgba(34, 34, 34, 0.8);
   --black-standard: rgba(0, 0, 0, 0.6);
   --gray: rgba(128, 128, 128);
-  --dark-blue: rgba(2, 0, 36, 1);
+  // --dark-blue: rgba(9, 3, 124, 1);
 
   html {
     min-height: 100%;
@@ -20,10 +27,10 @@
     background-repeat: no-repeat !important;
     background: linear-gradient(
         0deg,
-        var(--dark-blue) -1%,
-        var(--primary) 100%
+        var(--prim-triadic-blue) -1%,
+        var(--prim-green) 100%
       )
-      var(--dark-blue);
+      var(--prim-triadic-blue);
     color: var(--white);
   }
 
@@ -43,23 +50,20 @@
     min-height: 100%;
   }
 
-  a{
-    text-decoration: none;
+  a {
     text-transform: uppercase;
-    color: white;
-    text-shadow: 0.2rem 0.2rem 0.2rem var(--black);
+    text-decoration: underline;
+    color: var(--white-alpha);
   }
 
   a:hover {
-    background-color: none;
-    box-shadow: 0.2rem 0.2rem 0.2rem var(--dark-blue);
+    font-weight: 600;
+    color: var(--prim-triadic-light-red);
   }
-  
-  a:active {
-    background-color: black;
-  }
-  
+
+  // a:active {}
+
   a:visited {
-    color: orange;
+    color: var( --prim-triadic-light-red);
   }
 }
