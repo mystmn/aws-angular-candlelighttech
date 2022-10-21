@@ -8,7 +8,7 @@
 
   --prim-triadic-blue: rgb(9, 3, 124, 1);
   --prim-triadic-red: rgb(124, 9, 3);
-  --prim-triadic-light-red: rgb(255,171,166);
+  --prim-triadic-light-red: rgb(255, 171, 166);
 
   --secondary: rgb(100, 149, 237);
   --black: rgba(0, 0, 0, 0.8);
@@ -35,9 +35,8 @@
   }
 
   hr {
-    width: 30%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 15%;
+    margin: 2rem auto;
   }
 
   .title {
@@ -50,20 +49,33 @@
     min-height: 100%;
   }
 
-  a {
-    text-transform: uppercase;
-    text-decoration: underline;
+  /* 
+    Link Styling
+  */
+  .light{
+    color: var(--white-alpha);
+
+  }
+
+  a.light, a.light:visited{
+    text-decoration: underline dashed -1px;
     color: var(--white-alpha);
   }
 
-  a:hover {
-    font-weight: 600;
-    color: var(--prim-triadic-light-red);
+  a.light:hover {
+    text-decoration: underline solid -1px;
   }
 
-  // a:active {}
+  .dark{
+    color: var(--prim-triadic-blue);
+  }
 
-  a:visited {
-    color: var( --prim-triadic-light-red);
+  a.dark, a.dark:visited{
+    color: var(--black);
+    text-decoration: underline dashed -1px;
+  }
+
+  a.dark:hover{
+    text-decoration: underline solid -1px;
   }
 }
